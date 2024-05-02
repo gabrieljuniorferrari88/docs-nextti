@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { LinkBox } from "@/components/link-box";
+import { TweetData } from "@/types";
 import {
   Box,
   Image,
@@ -7,8 +8,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { LinkBox } from "@/components/link-box";
-import { TweetData } from "@/types";
+import { FC } from "react";
 
 interface TweetProps extends LinkBoxProps {
   tweet: TweetData;
