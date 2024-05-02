@@ -1,8 +1,8 @@
-import { DefaultLayout } from "@/layouts";
-import { Section } from "@/components/section";
-import { Hero } from "@/components/hero";
-import { Teams } from "@/components/teams";
 import { Footer } from "@/components/footer";
+import { Hero } from "@/components/hero";
+import { Section } from "@/components/section";
+import { Teams } from "@/components/teams";
+import { DefaultLayout } from "@/layouts";
 
 const Home = () => {
   return (
@@ -11,11 +11,11 @@ const Home = () => {
       <Teams mt="6" />
       <Section
         mt="12"
-        title="TrabalhoAvulso.com.br"
-        subtitle="Faça parte você também"
-        text="Seja um trabalhador ou uma empresa ou uma entidade sindical."
+        title="www.nexttisistemas.com.br"
+        subtitle="Conheça a Nextti"
+        text="Desenvolvimento de softwares sob demandas"
       />
-			<Footer />
+      <Footer />
     </DefaultLayout>
   );
 };

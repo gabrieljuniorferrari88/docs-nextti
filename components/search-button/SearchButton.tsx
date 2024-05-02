@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import {
   Box,
   Button,
@@ -9,13 +8,14 @@ import {
   IconButtonProps,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react';
-import { RiSearchLine } from 'react-icons/ri';
-import { useKBar } from 'kbar';
+} from "@chakra-ui/react";
+import { useKBar } from "kbar";
+import { FC } from "react";
+import { RiSearchLine } from "react-icons/ri";
 
 export const SearchButton: FC<ButtonProps> = (props) => {
   const kBar = useKBar();
-  const textColor = useColorModeValue('gray.500', 'gray.400');
+  const textColor = useColorModeValue("gray.500", "gray.400");
 
   return (
     <Button
@@ -33,7 +33,7 @@ export const SearchButton: FC<ButtonProps> = (props) => {
         <Flex
           as="kbd"
           fontSize="sm"
-          bg={useColorModeValue('white', 'gray.800')}
+          bg={useColorModeValue("white", "gray.800")}
           borderRadius="md"
           px="2"
           py="1"
@@ -44,9 +44,9 @@ export const SearchButton: FC<ButtonProps> = (props) => {
             title="Command"
             fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
             mr="1"
-            sx={{ '&[title]': { textDecoration: 'none' } }}
+            sx={{ "&[title]": { textDecoration: "none" } }}
           >
-            ⌘
+            Ctrl
           </Text>
           <Text>K</Text>
         </Flex>
@@ -65,7 +65,7 @@ export const MobileSearchButton: FC<IconButtonProps> = (props) => {
       boxShadow="sm"
       borderRadius="full"
       border="1px"
-      borderColor={useColorModeValue('gray.200', 'gray.700')}
+      borderColor={useColorModeValue("gray.200", "gray.700")}
       mr="3"
       icon={<Icon w="5" h="5" color="gray.400" as={RiSearchLine} />}
       onClick={() => kBar.query.toggle()}
