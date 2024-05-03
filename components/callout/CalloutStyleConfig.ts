@@ -34,13 +34,13 @@ const CalloutStyleConfig: ComponentStyleConfig = {
     },
   },
   variants: {
-    brand: {
-      bgColor: "brand.50",
-      color: "brand.700",
+    green: {
+      bgColor: "green.50",
+      color: "green.700",
 
       _dark: {
-        bgColor: "brand.800",
-        color: "brand.50",
+        bgColor: "green.800",
+        color: "green.50",
       },
     },
     info: {
@@ -82,7 +82,7 @@ const CalloutStyleConfig: ComponentStyleConfig = {
   },
   defaultProps: {
     size: "md",
-    variant: "brand",
+    variant: "green",
   },
 };
 

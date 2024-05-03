@@ -11,7 +11,7 @@ export const docsSections: Section[] = [
     ],
   },
 	{
-    section: "Cadastro e Acesso",		
+    section: "Nextti eSocial",		
     routes: [
       { title: "C.A: Introdução", path: "/docs/cadastro-introducao" },     
       { title: "C.A: Entidade Sindical", path: "/docs/cadastro-sindicato" },     

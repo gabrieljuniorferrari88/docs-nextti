@@ -1,12 +1,13 @@
-import { FC } from "react";
-import { Box, Icon, useStyleConfig } from "@chakra-ui/react";
-import {
-  RiInformationFill,
-  RiCheckboxCircleFill,
-  RiAlertFill,
-  RiCloseCircleFill,
-} from "react-icons/ri";
 import { WithChildren } from "@/types";
+import { Box, Icon, useStyleConfig } from "@chakra-ui/react";
+import { FC } from "react";
+import {
+  RiAlertFill,
+  RiCheckboxCircleFill,
+  RiCloseCircleFill,
+  RiEmotionFill,
+  RiInformationFill,
+} from "react-icons/ri";
 
 interface CalloutProps extends WithChildren {
   size: "sm" | "md";
@@ -31,7 +32,7 @@ const Callout: FC<CalloutProps> = ({ size, variant, children }) => {
       icon = RiCloseCircleFill;
       break;
     default:
-      icon = RiInformationFill;
+      icon = RiEmotionFill;
       break;
   }
 

@@ -1,10 +1,7 @@
 import {
-  RiFolder4Fill,
-  RiArchiveFill,
-	RiFileUnknowLine,
-  RiLayout2Fill,
-  RiGroupFill,
-	RiFolderUnknowFill
+	RiFolder4Fill,
+	RiFolderUnknowFill,
+	RiGroupFill
 } from "react-icons/ri";
 
 export const topLevelSectionsRoutes = [
@@ -28,4 +25,5 @@ export const topLevelSectionsRoutes = [
 			path: "/docs/introducao",
 			icon: RiFolder4Fill,
 		},
+		
 ];
