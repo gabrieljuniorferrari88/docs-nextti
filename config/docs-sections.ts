@@ -13,10 +13,10 @@ export const docsSections: Section[] = [
 	{
     section: "Nextti eSocial",		
     routes: [
-      { title: "C.A: Introdução", path: "/docs/cadastro-introducao" },     
-      { title: "C.A: Entidade Sindical", path: "/docs/cadastro-sindicato" },     
-      { title: "C.A: Empresa", path: "/docs/cadastro-empresa" },     
-      { title: "C.A: Trabalhador", path: "/docs/cadastro-trabalhador" },     
+      { title: "ESOCIAL: Introdução", path: "/docs/ne-introducao" },     
+      { title: "N.E: Entidade Sindical", path: "/docs/cadastro-sindicato" },     
+      { title: "N.E: Empresa", path: "/docs/cadastro-empresa" },     
+      { title: "N.E: Trabalhador", path: "/docs/cadastro-trabalhador" },     
     ],
   },
 	{
@@ -28,6 +28,7 @@ export const docsSections: Section[] = [
       // { title: "C.A: Trabalhador", path: "/docs/cadastro-trabalhador" },     
     ],
   },
+  
 ];
 
 export const allDocsRoutes: Route[] = docsSections.flatMap(
