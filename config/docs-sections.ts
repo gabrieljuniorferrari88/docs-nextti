@@ -13,9 +13,10 @@ export const docsSections: Section[] = [
 	{
     section: "Nextti eSocial",		
     routes: [
-      { title: "ESOCIAL: Introdução", path: "/docs/ne-introducao" },     
-      { title: "N.E: Entidade Sindical", path: "/docs/cadastro-sindicato" },     
-      { title: "N.E: Empresa", path: "/docs/cadastro-empresa" },     
+      { title: "eSocial: Introdução", path: "/docs/ne-introducao" },     
+      { title: "eSocial: Como usar Nextti eSocial", path: "/docs/ne-nextti-esocial" },     
+      { title: "Evento: S-1000", path: "/docs/ne-S1000" },
+      { title: "S-", path: "/docs/cadastro-empresa" },  
       { title: "N.E: Trabalhador", path: "/docs/cadastro-trabalhador" },     
     ],
   },

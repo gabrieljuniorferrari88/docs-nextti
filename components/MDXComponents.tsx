@@ -1,8 +1,9 @@
+import { Callout, CalloutNotIcon } from "@/components/callout/";
 import Image from "next/image";
-import { Callout } from "@/components/callout/";
 
 const MDXComponents = {
   Callout,
+  CalloutNotIcon,
   Image,
 };
 
