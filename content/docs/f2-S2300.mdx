@@ -1,28 +1,97 @@
 ---
 title: S-2300
-description: ...
+description: Trabalhador Sem Vínculo de Emprego/Estatutário
 ---
 
 ## 📌Conceito
 
-...
+Este evento é utilizado para prestar informações cadastrais relativas a trabalhadores que
+não possuem vínculo de emprego/estatutário com o declarante e a estagiários. Ou seja {" "}
+trabalhadores avulsos.
 
 ### 🔹Quem está obrigado?
 
-..
+O empregador/órgão público, órgão gestor de mão de obra, o sindicato de{" "}
+trabalhadores avulsos não portuários e a cooperativa, quando utilizarem mão de obra dos seguintes{" "}
+trabalhadores, sem vínculo de emprego ou estatutário e o concedente de estágio. Sendo assim o código{" "}
+para o avulso é o `202` - `Trabalhador Avulso Não Portuário`.
 
 ### 🔹Prazo de envio
 
-..
+Deve ser transmitido até o dia 15 (quinze) do mês subsequente ao do início da
+prestação de serviços, independentemente do regime previdenciário ao qual o trabalhador
+esteja vinculado, ou antes da transmissão de qualquer outro evento não periódico relativo a esse
+trabalhador.
+
+**Observação complementar**: após o envio deste é altamente recomendado o envio do evento relacionado
+ao monitoramento de saúde do trabalhador, evento **[S-2220](/docs/f4-S2220)**.
 
 ### 🔹Nextti
 
 Apresentaremos logo abaixo aonde encontrar esse evento em nosso sistema.
 
->📑&nbsp;&nbsp;<small>**Documentação:** está em fase de construção pela equipe **Nextti**.</small>
->>🚧<small>em breve iremos atualizar essa parte da documentação</small>
->>
->><small>&nbsp;&nbsp;&nbsp;&nbsp;Já esta configurado pela equipe **Nextti**.</small> 🫡 
+>Menu do sistema
+>
+><figure>
+>  <Image
+>    width={1280}
+>    height={720}
+>    objectFit="strach"
+>    src="https://www.nexttisistemas.com.br/assets/s2300/tela-inicial-sistema.png"
+>    alt="Tela inicial do sistema Nextti eSocial"
+>  />
+>  <figcaption>
+>    Tela inicial do sistema Nextti eSocial / FASE 02 / S2300 - Trabalhadores
+>  </figcaption>
+></figure>
+
+#### 1º Passo
+
+Acesse no menu lateral o `S2300 - Trabalhadores`, e ao acessar a tela deparamos com 6 partes:
+
+1. Cabeçalho: <small>(informações do sindicato)</small>
+2. Abas: <small>(tipos de envio)</small>
+3. Seleção: <small>(listagem dos trabalhadores para carregamento na listagem)</small>
+4. Ações: <small>(processar/enviar/consultar o carregamento do trabalhador)</small>
+5. Listagem: <small>(listagem dos trabalhadores enviados **azul** e não enviados **vermelho**)</small>
+6. Filtros: <small>(controle e ações de filtragem da listagem)</small>
+
+><figure>
+>  <Image
+>    width={800}
+>    height={480}
+>    objectFit="strach"
+>    src="https://www.nexttisistemas.com.br/assets/s2300/tela-2300.png"
+>    alt="Tela S-2300 do sistema Nextti eSocial"
+>  />
+>  <figcaption>
+>    Tela S-2300 do sistema Nextti eSocial
+>  </figcaption>
+></figure>
+
+#### 2º Passo
+Selecionar a aba do tipo de envio:
+- Incluir <small>- _inserção de um novo contrato do trabalhador ao eSocial_</small>
+- Alterar <small>- _alteração de um contrato existente_</small>
+- Excluir <small>- _exclusão de um contrato existente_</small>
+
+#### 3º Passo
+Selecionar um trabalhador que deseja enviar um contrato, e clique em `processar` para o sistema fazer a verificação 
+de dados do sistema Nextti, essa validação é importante para não houver campos vazios ou não preenchidos lá na ficha
+do trabalhador, caso encontrar algum erro o sistema irá informar-lo. Após a validação o trabalhador selecionado será 
+adicionado para a listagem com status `não enviado` e com sua <span style={{color: '#FF0000'}}>**COR**</span>.
+
+#### 4º Passo
+Se houver algum registro na listagem com status `não enviado`, devemos estar enviando para o eSocial esses registros, 
+podendo ser 1 trabalhador ou mais.
+
+Para estar enviando clique em `envio`, e aguarde até ter algum retorno:
+- Se o status manter `pendente`, houve algum erro, então clique na pastinha para visualizar o erro, se der outro erro, 
+entrar em contato com a equipe  **[Nextti](/docs/contato)**.
+- Se o status mudar para `aguardando eSocial`, foi enviado porem o eSocial precisa retornar se o resgistro contém erro, 
+ou não, e para verificar se deu tudo certo, clique no consultar. Observação: isso pode demorar e variar de acordo com o
+servidor do eSocial. Vai clicando em `consultar` em 5 em minutos ou mais.
+- Se o status mudar para `enviado` e sua <span style={{color: '#0000FF'}}>**COR**</span>, significa que deu tudo certo.
 
 ### ❓Dúvidas
 
